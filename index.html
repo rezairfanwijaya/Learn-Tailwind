@@ -1,13 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Belajar TailWind</title>
+    <title>Belajar Tailwind</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body>
-    <h1 class="text-fuchsia-900 font-bold uppercase ">Hallo Reza</h1>
+
+
+<body class="bg-gray-100">
+    
+
+
+    <section class="mb-28" id="nav">
+
+        <div class="navbar backdrop-blur-md bg-gradient-to-r from-indigo-900/10 via-purple-500/80 to-pink-500/100
+        hover:hover:from-pink-500/10 hover:to-yellow-500/80 p-3 shadow-sm fixed top-0 left-0 right-0">
+            <div class="px-0 md:px-32 lg:px-64 flex justify-between items-center">
+
+                <div class="logo w-10">
+                    <a href="#nav">
+                        <img src="assets/img/logo.png" alt="logo">
+                    </a>
+                </div>
+
+                <div class="github">
+                    <a href="https://github.com/rezairfanwijaya/Learn-Tailwind" target="blank">
+                        <img src="assets/img/github dark.png" alt="github" class="w-7">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="px-3 md:px-32 lg:px-64 my-7" id="installasi">
+        <!-- instalasi -->
+        <div class="card bg-white py-3 px-7 rounded-md shadow-sm hover:shadow-md">
+            <div class="install ">
+                <p class="judul font-bold text-2xl text-gray-700 my-4">Install Tailwind</p>
+            </div>
+
+            <div class="desc mt-9 text-justify">
+                <div class="cdn my-6">
+                    <p class="text-gray-600 text-lg font-bold mb-2">1. Melalui CDN</p>
+                    <p class="tracking-normal ml-5">Installasi tailwind bisa melalui CND seperti yang bisa lakukan pada
+                        bootstrap. Caranya tinggal masuk ke website <a
+                            href="https://tailwindcss.com/docs/installation/play-cdn"
+                            class="text-blue-800 font-bold hover:text-blue-600" target="blank">Tailwind dengan CDN</a>
+                        lalu copy bagian script nya dan paste ke head html kita. <span
+                            class="font-bold text-yellow-400 leading-7">SELAMAT TAILWIND BERHASIL ANDA INSTALL.</span>
+                    </p>
+                    <img src="assets/img/install via cdn.png" alt="via cnd" class="mt-4">
+                </div>
+
+                <div class="cdn my-6">
+                    <p class="text-gray-600 text-lg font-bold">2. Melalui CLI</p>
+                    <p class="tracking-normal ml-5">Installasi tailwind bisa melalui CND seperti yang bisa lakukan pada
+                        bootstrap</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
