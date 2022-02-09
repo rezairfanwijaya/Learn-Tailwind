@@ -38,13 +38,15 @@
                     <div class="mode mx-6 flex">
                         <div class="dark">
                             <button>
-                                <ion-icon name="moon" class="text-white text-2xl hidden" onclick="dark(true)"></ion-icon>
+                                <ion-icon name="moon" class="text-white text-2xl hidden" onclick="dark(true)">
+                                </ion-icon>
                             </button>
                         </div>
 
                         <div class="light">
                             <button>
-                                <ion-icon name="sunny" class="text-white text-2xl hidden" onclick="dark(false)"></ion-icon>
+                                <ion-icon name="sunny" class="text-white text-2xl hidden" onclick="dark(false)">
+                                </ion-icon>
                             </button>
                         </div>
                     </div>
@@ -64,7 +66,10 @@
     <section class="px-3 md:px-32 lg:px-64 my-7" id="tailwind">
         <div class="bg-white py-3 px-7 rounded-md shadow-sm hover:shadow-md">
             <p class="judul font-bold text-2xl text-gray-700 my-4">Apa itu Tailwind?</p>
-            <p class="desc text-justify">Tailwind merupakan framework css seperti bootstrap namun lebih mengutamakan utility yang dikemas melalui class. Dan anda tidak harus membuat css external jika anda menggunakan tailwind. Anda bisa melihat dokumentasi resmi <a href="https://tailwindcss.com/" target="blank" class="text-blue-700 font-bold ">tailwind di sini.</a>
+            <p class="desc text-justify">Tailwind merupakan framework css seperti bootstrap namun lebih mengutamakan
+                utility yang dikemas melalui class. Dan anda tidak harus membuat css external jika anda menggunakan
+                tailwind. Anda bisa melihat dokumentasi resmi <a href="https://tailwindcss.com/" target="blank"
+                    class="text-blue-700 hover:text-blue-500 font-bold ">tailwind di sini.</a>
             </p>
             <img src="assets/img/apaitutailwind.png" alt="code" class="my-4">
         </div>
@@ -72,7 +77,7 @@
 
 
 
-    <section class="px-3 md:px-32 lg:px-64 my-7" id="installasi">
+    <section class="px-3 md:px-32 lg:px-64 my-20" id="installasi">
         <!-- instalasi -->
         <div class="card bg-white py-3 px-7 rounded-md shadow-sm hover:shadow-md">
             <div class="install ">
@@ -92,10 +97,70 @@
                     <img src="assets/img/install via cdn.png" alt="via cnd" class="mt-4">
                 </div>
 
-                <div class="cdn my-6">
-                    <p class="text-gray-600 text-lg font-bold">2. Melalui CLI</p>
-                    <p class="tracking-normal ml-5">Installasi tailwind bisa melalui CND seperti yang bisa lakukan pada
-                        bootstrap</p>
+                <div class="cli my-6">
+                    <p class="text-gray-600 text-lg font-bold mb-2">2. Melalui CLI</p>
+                    <p class="tracking-normal ml-5 mb-4">Installasi ini sangat disarankan ketika website anda sudah
+                        masuk ke tahap production dan siap direlease. Sehingga website anda tidak perlu melakukan
+                        request ke server tailwind. Tahapan menginstall tailwind menggunakan CLI sangat mudah, berikut
+                        tahapan yang bisa anda ikuti :</p>
+
+                    <!-- install node js -->
+                    <p class="judul ml-5 text-gray-600 font-bold mb-1">1. Install Node JS</p>
+                    <p class="desc ml-9">Silahkan anda install node js terlebih dahulu. Karena nanti akan dibutuhkan
+                        ketika kita menginstall tailwind. <a href="https://nodejs.org/en/"
+                            class="text-blue-700 font-bold hover:text-blue-500" target="blank">Download disini</a>.
+                        Selanjutnya tinggal lakukan installasi seperti biasa. Untuk mengecek apakah sudah terinstall
+                        atau belum, anda bisa masuk ke CMD lalu ketikan perintah <span class="text-blue-900">node
+                            -v</span> dan cek juga npm nya dengan cara <span class="text-blue-900">npm -v.</span> Jika
+                        tidak muncul seperti gambar di bawah anda bisa pergi ke <a
+                            href="https://www.journaldev.com/7402/node-js-environment-setup-node-js-installation"
+                            class="font-bold text-blue-700 hover:text-blue-500" target="blank">sini</a>
+                        <img src="assets/img/ceknodenpm.png" alt="node" class="mt-4">
+                    </p>
+
+                    <!-- eksekusi installasi menggunakan cli  -->
+                    <p class="judul ml-5 text-gray-600 font-bold mt-7 mb-1">2. Install Tailwind dengan CLI</p>
+                    <p class="desc ml-9">Jika node dan npm sudah terpasang, sekarang silahkan pergi ke <a
+                            href="https://tailwindcss.com/docs/installation"
+                            class="text-blue-700 hover:text-blue-500 font-bold">sini.</a> Lalu anda ketikan perintah
+                        <span class="text-blue-900">npm init.</span> Jika sudah lalu lanjut ketikan perintah <span
+                            class="text-blue-900">npm install -D tailwindcss.</span> Jika sudah anda ketikan pertinah
+                        <span class="text-blue-900">npx tailwindcss init.</span> Jika semua berhasil maka di file
+                        explorer anda akan muncul folder dan file tambahan seperti ini. Selamat tailwind berhasil anda
+                        install namun belum bisa digunakan.
+                        <img src="assets/img/berhasilinstalltailwondcli.png" alt="success" class="mt-4">
+                    </p>
+
+
+                    <!-- setup tailwind -->
+                    <p class="judul ml-5 text-gray-600 font-bold mt-7 mb-1">3. Setup Tailwind</p>
+                    <p class="desc ml-9 mb-1">Agar anda bisa menggunakan tailwind ada beberapa konfigurasi yang harus
+                        anda lakukan. Pertama anda buat folder baru berupa src/css. Lalu buat file baru di folder
+                        tersebut dan masukan script berikut <span class="text-blue font-bold text-blue-800">@tailwind
+                            base;
+                            @tailwind components;
+                            @tailwind utilities</span>. Setalah itu buat folder assets/css Sehingga susunan folder akan
+                        berubah seperti ini
+                        <img src="assets/img/cssinput.png" alt="css input" class="mt-4">
+                    </p>
+
+                    <p class="ml-14 text-gray-500 font-bold mb-1 mt-4">1. File package.json</p>
+                    <p class="ml-16">Silahkan buka file package.json dan ubah di bagian script seperti berikut. Lalu jalankan perintah <span class="font-bold text-blue-800">npm run dev.</span> Dan akan terbentuk file baru di folder asset/css berupa style.css.
+                        
+                        <img src="assets/img/package.png" alt="package" class="mt-3">
+                        <img src="assets//img/outputcss.png" alt="output" class="mt-2">
+                    </p>
+
+                    <p class="ml-14 text-gray-500 font-bold mb-1 mt-5">2. File tailwind.config.js</p>
+                    <p class="ml-16">Silahkan buka file tailwind.config.js lalu lakukan perubahan seperti pada gambar beirkut
+                        <img src="assets/img/configtailwind.png" alt="config" class="mt-3">
+                    </p>
+
+                    <p class="ml-14 text-gray-500 font-bold mb-1 mt-5">3. Installasi berhasil</p>
+                    <p class="ml-16">Selamat tailwind berhasil anda install sekarang anda bisa menggunakan utilities dari tailwind. Oh ya saat menjalankan perintah <span class="font-bold text-blue-800">npm run dev</span> ushakan terminal jangan di close supaya tailwind bisa melakukan perubahan secara realtime. Dan untuk file index.html bagian css externalnya anda arahkan ke assets/css/style.css.
+                        <img src="assets/img/installberhasil.png" alt="berhasil" class="mt-4">
+                    </p>
+
                 </div>
 
             </div>
@@ -103,7 +168,7 @@
     </section>
 
 
-   
+
 
 
 
