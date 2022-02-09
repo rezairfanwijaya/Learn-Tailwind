@@ -23,7 +23,7 @@
 
     <section class="mb-28" id="nav">
 
-        <div class="navbar backdrop-blur-md bg-gradient-to-r from-indigo-900/10 via-purple-500/80 to-pink-500/100
+        <div class="navbar z-[99] backdrop-blur-md bg-gradient-to-r from-indigo-900/10 via-purple-500/80 to-pink-500/100
         hover:hover:from-pink-500/10 hover:to-yellow-500/80 p-3 shadow-sm fixed top-0 left-0 right-0">
             <div class="px-0 md:px-32 lg:px-64 flex justify-between items-center">
 
@@ -288,12 +288,14 @@
 
 
                         <button
-                            class=" rounded-md bg-blue-400 hover:bg-blue-700 font-bold text-white px-9 py-3 block mx-auto">Beli Kelas</button>
+                            class=" rounded-md bg-blue-400 hover:bg-blue-700 font-bold text-white px-9 py-3 block mx-auto">Beli
+                            Kelas</button>
                     </div>
                 </div>
 
                 <!-- sultan -->
-                <div class="col-span-3 row-span-4 lg:col-span-1 md:col-span-3 bg-yellow-300 py-6 px-4 rounded-md hover:bg-yellow-400 hover:shadow-sm">
+                <div
+                    class="col-span-3 row-span-4 lg:col-span-1 md:col-span-3 bg-yellow-300 py-6 px-4 rounded-md hover:bg-yellow-400 hover:shadow-sm">
                     <p class="font-bold text-white text-3xl mb-6">Sultan</p>
                     <div class="flex text-white">
                         <ion-icon name="checkmark-circle-outline" class=" text-2xl"></ion-icon>
@@ -318,9 +320,11 @@
                     </div>
 
 
-                    <button class="relative rounded-md bg-yellow-500 hover:bg-yellow-600 font-bold text-white px-9 py-3 block mx-auto">
+                    <button
+                        class="relative rounded-md bg-yellow-500 hover:bg-yellow-600 font-bold text-white px-9 py-3 block mx-auto">
                         <span class="absolute top-0 right-0 inline-flex rounded-full h-3 w-3 bg-white"></span>
-                        <span class="animate-ping absolute top-0 right-0 inline-flex h-3 w-3 rounded-full bg-yellow-700 opacity-75"></span>
+                        <span
+                            class="animate-ping absolute top-0 right-0 inline-flex h-3 w-3 rounded-full bg-yellow-700 opacity-75"></span>
                         Beli Kelas
                     </button>
                 </div>
@@ -346,15 +350,55 @@
 
 
                         <button
-                            class=" rounded-md bg-blue-400 hover:bg-blue-700 font-bold text-white px-9 py-3 block mx-auto">Beli Kelas</button>
+                            class=" rounded-md bg-blue-400 hover:bg-blue-700 font-bold text-white px-9 py-3 block mx-auto">Beli
+                            Kelas</button>
                     </div>
                 </div>
-                
+
             </div>
             <hr class="my-14">
             <img src="assets/img/cardsrandart.png" alt="standart">
             <img src="assets/img/cardsultan.png" alt="standart" class="my-8">
             <img src="assets/img/cardpremium.png" alt="standart" class="my-8">
+        </div>
+    </section>
+
+
+    <section class="cover" id="nav-create">
+        <div class="card">
+            <p class="judul">Membuat Navbar</p>
+            <div class="flex justify-between items-center bg-blue-200 p-3 rounded-md relative z-[9] mb-4">
+                <div class="logo" style="height: 45px;">
+                    <img src="assets/img/logo.png" alt="logo" class="h-full">
+                </div>
+
+                <div class="nav">
+                    <div class="toggle md:hidden lg:hidden" style="height:40px">
+                        <button>
+                            <ion-icon name="menu-outline" class="text-blue-500 text-4xl"></ion-icon>
+                        </button>
+                    </div>
+
+                    <ul class=" hidden md:hidden lg:flex text-blue-600 sidebar ">
+                        <li>
+                            <a href="#nav-create" class="px-4 nav-decoration font-normal">Home</a>
+                        </li>
+                        <li>
+                            <a href="#nav-create" class="px-4 nav-decoration font-normal">Feature</a>
+                        </li>
+                        <li>
+                            <a href="#nav-create" class="px-4 nav-decoration font-normal">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="#nav-create" class="px-4 nav-decoration font-normal">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#nav-create" class="px-4 nav-decoration font-normal">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -367,7 +411,14 @@
     </script>
 
     <script>
+        let toggle = document.querySelector('.toggle')
+        let sidebar = document.querySelector('.sidebar')
 
+        toggle.addEventListener('click', function(){
+            
+            sidebar.classList.toggle('hidden')
+            sidebar.classList.toggle('kecil')
+        })
     </script>
 </body>
 

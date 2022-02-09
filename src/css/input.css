@@ -20,3 +20,16 @@
         @apply px-3 md:px-32 lg:px-64 my-10 md:my-20 lg:my-20
     }
 }
+
+@layer base{
+    .nav-decoration{
+        @apply hover:text-white transition  hover:bg-blue-400 hover:p-1 rounded-full hover:px-4
+    }
+}
+
+
+@layer base {
+    .kecil{
+     @apply  absolute left-0 bg-blue-400 right-0 top-16 rounded-b-md transition
+    }
+}
