@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.card{
+    @apply bg-white py-3 px-7 rounded-md shadow-sm 
+}
+
+.card:hover{
+    @apply shadow-md
+}
+
+
+@layer base{
+    .cover{
+        @apply md:px-32 lg:px-64 sm:my-16 md:my-20 lg:my-20
+    }
+}

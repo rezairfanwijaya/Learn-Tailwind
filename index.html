@@ -64,7 +64,7 @@
 
 
     <section class="px-3 md:px-32 lg:px-64 my-7" id="tailwind">
-        <div class="bg-white py-3 px-7 rounded-md shadow-sm hover:shadow-md">
+        <div class="card">
             <p class="judul font-bold text-2xl text-gray-700 my-4">Apa itu Tailwind?</p>
             <p class="desc text-justify">Tailwind merupakan framework css seperti bootstrap namun lebih mengutamakan
                 utility yang dikemas melalui class. Dan anda tidak harus membuat css external jika anda menggunakan
@@ -77,9 +77,9 @@
 
 
 
-    <section class="px-3 md:px-32 lg:px-64 sm:my-16 md:my-20 lg:my-20" id="installasi">
+    <section class="cover" id="installasi">
         <!-- instalasi -->
-        <div class="card bg-white py-3 px-7 rounded-md shadow-sm hover:shadow-md">
+        <div class="card">
             <div class="install ">
                 <p class="judul font-bold text-2xl text-gray-700 my-4">Install Tailwind</p>
             </div>
@@ -145,28 +145,44 @@
                     </p>
 
                     <p class="ml-14 text-gray-500 font-bold mb-1 mt-4">1. File package.json</p>
-                    <p class="ml-16">Silahkan buka file package.json dan ubah di bagian script seperti berikut. Lalu jalankan perintah <span class="font-bold text-blue-800">npm run dev.</span> Dan akan terbentuk file baru di folder asset/css berupa style.css.
-                        
+                    <p class="ml-16">Silahkan buka file package.json dan ubah di bagian script seperti berikut. Lalu
+                        jalankan perintah <span class="font-bold text-blue-800">npm run dev.</span> Dan akan terbentuk
+                        file baru di folder asset/css berupa style.css.
+
                         <img src="assets/img/package.png" alt="package" class="mt-3">
                         <img src="assets//img/outputcss.png" alt="output" class="mt-2">
                     </p>
 
                     <p class="ml-14 text-gray-500 font-bold mb-1 mt-5">2. File tailwind.config.js</p>
-                    <p class="ml-16">Silahkan buka file tailwind.config.js lalu lakukan perubahan seperti pada gambar beirkut
+                    <p class="ml-16">Silahkan buka file tailwind.config.js lalu lakukan perubahan seperti pada gambar
+                        beirkut
                         <img src="assets/img/configtailwind.png" alt="config" class="mt-3">
                     </p>
 
                     <p class="ml-14 text-gray-500 font-bold mb-1 mt-5">3. Installasi berhasil</p>
-                    <p class="ml-16">Selamat tailwind berhasil anda install sekarang anda bisa menggunakan utilities dari tailwind. Oh ya saat menjalankan perintah <span class="font-bold text-blue-800">npm run dev</span> ushakan terminal jangan di close supaya tailwind bisa melakukan perubahan secara realtime. Dan untuk file index.html bagian css externalnya anda arahkan ke assets/css/style.css.
+                    <p class="ml-16">Selamat tailwind berhasil anda install sekarang anda bisa menggunakan utilities
+                        dari tailwind. Oh ya saat menjalankan perintah <span class="font-bold text-blue-800">npm run
+                            dev</span> ushakan terminal jangan di close supaya tailwind bisa melakukan perubahan secara
+                        realtime. Dan untuk file index.html bagian css externalnya anda arahkan ke assets/css/style.css.
                         <img src="assets/img/installberhasil.png" alt="berhasil" class="mt-4">
                     </p>
-
                 </div>
-
             </div>
         </div>
     </section>
 
+
+    <section class="cover" id="custom">
+        <div class="card">
+            <p class="judul font-bold text-2xl text-gray-700 my-4">Custom Utility</p>
+            <p class="desc text-justify">Pada tailwind kita bisa memodifikasi atau melakukan gruping terhadap utility yang kita tulis. Saya akan melakukan grouping pada utlitiy ketika membuat cover. Dan lihat perbedaannya
+                <img src="assets/img/custombefore.png" alt="before" class="mt-2">
+                <img src="assets/img/customafter.png" alt="after" class="my-2 mb-5">
+            Sangat terlihat jelas pada class section jadi lebih singkat penulisannya. Cara melakukan grouping sangat mudah anda hanya perlu ke file input.css dan lakukan perubahan seperti ini.
+            <img src="assets/img/customproses.png" alt="proses" class="my-4">
+            </p>
+        </div>
+    </section>
 
 
 
