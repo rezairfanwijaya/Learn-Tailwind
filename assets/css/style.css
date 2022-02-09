@@ -423,11 +423,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: none;
 }
 
-@media (min-width: 640px) {
-  .cover {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
+.cover {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 @media (min-width: 768px) {
@@ -780,19 +780,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px) {
-  .sm\:my-16 {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-  }
-}
-
 @media (min-width: 768px) {
-  .md\:my-20 {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-
   .md\:px-32 {
     padding-left: 8rem;
     padding-right: 8rem;
@@ -800,11 +788,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1024px) {
-  .lg\:my-20 {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-  }
-
   .lg\:px-64 {
     padding-left: 16rem;
     padding-right: 16rem;

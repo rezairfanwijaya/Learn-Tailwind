@@ -13,6 +13,6 @@
 
 @layer base{
     .cover{
-        @apply md:px-32 lg:px-64 sm:my-16 md:my-20 lg:my-20
+        @apply px-3 md:px-32 lg:px-64 my-10 md:my-20 lg:my-20
     }
 }
