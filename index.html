@@ -174,13 +174,88 @@
 
     <section class="cover" id="custom">
         <div class="card">
-            <p class="judul font-bold text-2xl text-gray-700 my-4">Custom Utility</p>
-            <p class="desc text-justify">Pada tailwind kita bisa memodifikasi atau melakukan gruping terhadap utility yang kita tulis. Saya akan melakukan grouping pada utlitiy ketika membuat cover. Dan lihat perbedaannya
+            <p class="judul">Custom Utility</p>
+            <p class="desc text-justify">Pada tailwind kita bisa memodifikasi atau melakukan gruping terhadap utility
+                yang kita tulis. Saya akan melakukan grouping pada utlitiy ketika membuat cover. Dan lihat perbedaannya
                 <img src="assets/img/custombefore.png" alt="before" class="mt-2">
                 <img src="assets/img/customafter.png" alt="after" class="my-2 mb-5">
-            Sangat terlihat jelas pada class section jadi lebih singkat penulisannya. Cara melakukan grouping sangat mudah anda hanya perlu ke file input.css dan lakukan perubahan seperti ini.
-            <img src="assets/img/customproses.png" alt="proses" class="my-4">
+                Sangat terlihat jelas pada class section jadi lebih singkat penulisannya. Cara melakukan grouping sangat
+                mudah anda hanya perlu ke file input.css dan lakukan perubahan seperti ini.
+                <img src="assets/img/customproses.png" alt="proses" class="my-4">
             </p>
+        </div>
+    </section>
+
+    <section class="cover">
+        <div class="card">
+            <p class="judul">Membuat Tombol</p>
+            <div class="button flex justify-start items-center my-2 flex-wrap">
+                <button
+                    class="bg-blue-400 text-white mb-3 mx-2 py-2 px-4 text-lg rounded-full  hover:bg-blue-700">Awesome!!</button>
+
+                <button
+                    class="bg-yellow-400 text-white mb-3 mx-2 py-2 px-4 text-lg rounded-2xl  hover:bg-yellow-600">Awesome!!</button>
+
+                <button
+                    class="bg-fuchsia-400 text-white mb-3 mx-2 py-2 px-4 text-lg rounded-md  hover:bg-fuchsia-600">Awesome!!</button>
+
+                <button
+                    class=" bg-pink-400 text-white mb-3 mx-2 py-2 px-4 text-lg rounded-md  hover:bg-pink-600">Awesome!!</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cover">
+        <div class="card">
+            <p class="judul">Setup Grid</p>
+            <div class="gird-pertama">
+                <div class="grid grid-cols-4 grid-rows-4 gap-3 text-center text-white font-bold">
+                    <div class="col-span-2 row-span-4 bg-blue-300 text-center p-4 rounded-lg">
+                        1
+                    </div>
+                    <div class="col-span-1 row-span-2 bg-red-200 text-center p-4 rounded-lg">
+                        2
+                    </div>
+                    <div class="col-span-1 row-span-1 bg-yellow-200 text-center p-4 rounded-lg">
+                        3
+                    </div>
+                    <div class="col-span-1 row-span-1 bg-green-200 text-center p-4 rounded-lg">
+                        4
+                    </div>
+                    <div class="col-span-1 row-span-2 bg-violet-400 text-center p-4 rounded-lg">
+                        5
+                    </div>
+                    <div class="col-span-1 row-span-2 bg-fuchsia-400 text-center p-4 rounded-lg">
+                        6
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="grid-kedua my-5">
+                <div class="grid grid-cols-4 grid-rows-3 gap-3 text-center text-white font-bold">
+                    <div class="col-span-2 row-span-3 p-4 bg-amber-300 rounded-md">
+                        1
+                    </div>
+                    <div class="col-span- row-span-1 p-4 bg-yellow-200 rounded-md">
+                        2
+                    </div>
+                    <div class="col-span-1 row-span-1 p-4 bg-green-200 rounded-md">
+                        3
+                    </div>
+                    <div class="col-span-1 row-span-1 p-4 bg-red-200 rounded-md">
+                        4
+                    </div>
+                    <div class="col-span-1 row-span-1 p-4 bg-blue-200 rounded-md">
+                        5
+                    </div>
+
+                    <div class="col-span-2 row-span-1 p-4 bg-cyan-200 rounded-md">
+                        6
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
