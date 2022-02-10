@@ -14,12 +14,25 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800;900&display=swap" rel="stylesheet">
+    <!-- <script src="assets/js/config.js"></script> -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extends: {
+                    fontFamily: {
+                        inter: ['Inter'],
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 
-<body class="bg-gray-100">
-
-
+<body class="bg-gray-100 ">
 
     <section class="mb-28" id="nav">
 
@@ -63,377 +76,441 @@
     </section>
 
 
-    <!-- tailwind ? -->
-    <section class="px-3 md:px-32 lg:px-64 my-7" id="tailwind">
-        <div class="card">
-            <p class="judul font-bold text-2xl text-gray-700 my-4">Apa itu Tailwind?</p>
-            <p class="desc text-justify">Tailwind merupakan framework css seperti bootstrap namun lebih mengutamakan
-                utility yang dikemas melalui class. Dan anda tidak harus membuat css external jika anda menggunakan
-                tailwind. Anda bisa melihat dokumentasi resmi <a href="https://tailwindcss.com/" target="blank"
-                    class="text-blue-700 hover:text-blue-500 font-bold ">tailwind di sini.</a>
-            </p>
-            <img src="assets/img/apaitutailwind.png" alt="code" class="my-4">
-        </div>
-    </section>
+    <!-- MAIN KONTEN -->
 
-
-
-    <!-- instalasi -->
-    <section class="cover" id="installasi">
-        <!-- instalasi -->
-        <div class="card">
-            <div class="install ">
-                <p class="judul font-bold text-2xl text-gray-700 my-4">Install Tailwind</p>
-            </div>
-
-            <div class="desc mt-9 text-justify">
-                <div class="cdn my-6">
-                    <p class="text-gray-600 text-lg font-bold mb-2">1. Melalui CDN</p>
-                    <p class="tracking-normal ml-5">Installasi tailwind bisa melalui CDN seperti yang bisa lakukan pada
-                        bootstrap. Caranya tinggal masuk ke website <a
-                            href="https://tailwindcss.com/docs/installation/play-cdn"
-                            class="text-blue-800 font-bold hover:text-blue-600" target="blank">Tailwind dengan CDN</a>
-                        lalu copy bagian script nya dan paste ke head html kita. <span
-                            class="font-bold text-yellow-400 leading-7">SELAMAT TAILWIND BERHASIL ANDA INSTALL.</span>
+    <main class="sm:block lg:flex justify-center items-start">
+        <div class="konten-inti lg:px-14 sm:px-0">
+            <!-- tailwind ? -->
+            <section class="px-3 md:px-32 lg:px-64  " id="definisi">
+                <div class="card">
+                    <p class="judul font-bold text-2xl text-gray-700 my-4">Apa itu Tailwind?</p>
+                    <p class="desc text-justify">Tailwind merupakan framework css seperti bootstrap namun lebih
+                        mengutamakan
+                        utility yang dikemas melalui class. Dan anda tidak harus membuat css external jika anda
+                        menggunakan
+                        tailwind. Anda bisa melihat dokumentasi resmi <a href="https://tailwindcss.com/" target="blank"
+                            class="text-blue-700 hover:text-blue-500 font-bold ">tailwind di sini.</a>
                     </p>
-                    <img src="assets/img/install via cdn.png" alt="via cnd" class="mt-4">
+                    <img src="assets/img/apaitutailwind.png" alt="code" class="my-4">
                 </div>
-
-                <div class="cli my-6">
-                    <p class="text-gray-600 text-lg font-bold mb-2">2. Melalui CLI</p>
-                    <p class="tracking-normal ml-5 mb-4">Installasi ini sangat disarankan ketika website anda sudah
-                        masuk ke tahap production dan siap direlease. Sehingga website anda tidak perlu melakukan
-                        request ke server tailwind. Tahapan menginstall tailwind menggunakan CLI sangat mudah, berikut
-                        tahapan yang bisa anda ikuti :</p>
-
-                    <!-- install node js -->
-                    <p class="judul ml-5 text-gray-600 font-bold mb-1">1. Install Node JS</p>
-                    <p class="desc ml-9">Silahkan anda install node js terlebih dahulu. Karena nanti akan dibutuhkan
-                        ketika kita menginstall tailwind. <a href="https://nodejs.org/en/"
-                            class="text-blue-700 font-bold hover:text-blue-500" target="blank">Download disini</a>.
-                        Selanjutnya tinggal lakukan installasi seperti biasa. Untuk mengecek apakah sudah terinstall
-                        atau belum, anda bisa masuk ke CMD lalu ketikan perintah <span class="text-blue-900">node
-                            -v</span> dan cek juga npm nya dengan cara <span class="text-blue-900">npm -v.</span> Jika
-                        tidak muncul seperti gambar di bawah anda bisa pergi ke <a
-                            href="https://www.journaldev.com/7402/node-js-environment-setup-node-js-installation"
-                            class="font-bold text-blue-700 hover:text-blue-500" target="blank">sini</a>
-                        <img src="assets/img/ceknodenpm.png" alt="node" class="mt-4">
-                    </p>
-
-                    <!-- eksekusi installasi menggunakan cli  -->
-                    <p class="judul ml-5 text-gray-600 font-bold mt-7 mb-1">2. Install Tailwind dengan CLI</p>
-                    <p class="desc ml-9">Jika node dan npm sudah terpasang, sekarang silahkan pergi ke <a
-                            href="https://tailwindcss.com/docs/installation"
-                            class="text-blue-700 hover:text-blue-500 font-bold">sini.</a> Lalu anda ketikan perintah
-                        <span class="text-blue-900">npm init.</span> Jika sudah lalu lanjut ketikan perintah <span
-                            class="text-blue-900">npm install -D tailwindcss.</span> Jika sudah anda ketikan pertinah
-                        <span class="text-blue-900">npx tailwindcss init.</span> Jika semua berhasil maka di file
-                        explorer anda akan muncul folder dan file tambahan seperti ini. Selamat tailwind berhasil anda
-                        install namun belum bisa digunakan.
-                        <img src="assets/img/berhasilinstalltailwondcli.png" alt="success" class="mt-4">
-                    </p>
+            </section>
 
 
-                    <!-- setup tailwind -->
-                    <p class="judul ml-5 text-gray-600 font-bold mt-7 mb-1">3. Setup Tailwind</p>
-                    <p class="desc ml-9 mb-1">Agar anda bisa menggunakan tailwind ada beberapa konfigurasi yang harus
-                        anda lakukan. Pertama anda buat folder baru berupa src/css. Lalu buat file baru di folder
-                        tersebut dan masukan script berikut <span class="text-blue font-bold text-blue-800">@tailwind
-                            base;
-                            @tailwind components;
-                            @tailwind utilities</span>. Setalah itu buat folder assets/css Sehingga susunan folder akan
-                        berubah seperti ini
-                        <img src="assets/img/cssinput.png" alt="css input" class="mt-4">
-                    </p>
 
-                    <p class="ml-14 text-gray-500 font-bold mb-1 mt-4">1. File package.json</p>
-                    <p class="ml-16">Silahkan buka file package.json dan ubah di bagian script seperti berikut. Lalu
-                        jalankan perintah <span class="font-bold text-blue-800">npm run dev.</span> Dan akan terbentuk
-                        file baru di folder asset/css berupa style.css.
-
-                        <img src="assets/img/package.png" alt="package" class="mt-3">
-                        <img src="assets//img/outputcss.png" alt="output" class="mt-2">
-                    </p>
-
-                    <p class="ml-14 text-gray-500 font-bold mb-1 mt-5">2. File tailwind.config.js</p>
-                    <p class="ml-16">Silahkan buka file tailwind.config.js lalu lakukan perubahan seperti pada gambar
-                        beirkut
-                        <img src="assets/img/configtailwind.png" alt="config" class="mt-3">
-                    </p>
-
-                    <p class="ml-14 text-gray-500 font-bold mb-1 mt-5">3. Installasi berhasil</p>
-                    <p class="ml-16">Selamat tailwind berhasil anda install sekarang anda bisa menggunakan utilities
-                        dari tailwind. Oh ya saat menjalankan perintah <span class="font-bold text-blue-800">npm run
-                            dev</span> ushakan terminal jangan di close supaya tailwind bisa melakukan perubahan secara
-                        realtime. Dan untuk file index.html bagian css externalnya anda arahkan ke assets/css/style.css.
-                        <img src="assets/img/installberhasil.png" alt="berhasil" class="mt-4">
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- custom utility -->
-    <section class="cover" id="custom">
-        <div class="card">
-            <p class="judul">Custom Utility</p>
-            <p class="desc text-justify">Pada tailwind kita bisa memodifikasi atau melakukan gruping terhadap utility
-                yang kita tulis. Saya akan melakukan grouping pada utlitiy ketika membuat cover. Dan lihat perbedaannya
-                <img src="assets/img/custombefore.png" alt="before" class="mt-2">
-                <img src="assets/img/customafter.png" alt="after" class="my-2 mb-5">
-                Sangat terlihat jelas pada class section jadi lebih singkat penulisannya. Cara melakukan grouping sangat
-                mudah anda hanya perlu ke file input.css dan lakukan perubahan seperti ini.
-                <img src="assets/img/customproses.png" alt="proses" class="my-4">
-            </p>
-        </div>
-    </section>
-
-    <!-- button -->
-    <section class="cover">
-        <div class="card">
-            <p class="judul">Membuat Tombol</p>
-            <div class="button flex justify-start items-center my-2 flex-wrap">
-                <button
-                    class="bg-blue-400 text-white mb-3 mx-2 py-2 px-4 text-lg rounded-full  hover:bg-blue-700">Awesome!!</button>
-
-                <button
-                    class="bg-yellow-400 text-white mb-3 mx-2 py-2 px-4 text-lg rounded-2xl  hover:bg-yellow-600">Awesome!!</button>
-
-                <button
-                    class="bg-fuchsia-400 text-white mb-3 mx-2 py-2 px-4 text-lg rounded-md  hover:bg-fuchsia-600">Awesome!!</button>
-
-                <button
-                    class=" bg-pink-400 text-white mb-3 mx-2 py-2 px-4 text-lg rounded-md  hover:bg-pink-600">Awesome!!</button>
-            </div>
-            <img src="assets/img/tombol.png" alt="tombol" class="my-4">
-        </div>
-    </section>
-
-
-    <!-- grid -->
-    <section class="cover">
-        <div class="card">
-            <p class="judul">Setup Grid</p>
-            <div class="gird-pertama">
-                <div class="grid grid-cols-4 grid-rows-4 gap-3 text-center text-white font-bold">
-                    <div class="col-span-2 row-span-4 bg-blue-300 text-center p-4 rounded-lg">
-                        1
-                    </div>
-                    <div class="col-span-1 row-span-2 bg-red-200 text-center p-4 rounded-lg">
-                        2
-                    </div>
-                    <div class="col-span-1 row-span-1 bg-yellow-200 text-center p-4 rounded-lg">
-                        3
-                    </div>
-                    <div class="col-span-1 row-span-1 bg-green-200 text-center p-4 rounded-lg">
-                        4
-                    </div>
-                    <div class="col-span-1 row-span-2 bg-violet-400 text-center p-4 rounded-lg">
-                        5
-                    </div>
-                    <div class="col-span-1 row-span-2 bg-fuchsia-400 text-center p-4 rounded-lg">
-                        6
+            <!-- instalasi -->
+            <section class="cover" id="install">
+                <!-- instalasi -->
+                <div class="card">
+                    <div class="install ">
+                        <p class="judul font-bold text-2xl text-gray-700 my-4">Install Tailwind</p>
                     </div>
 
-                </div>
-            </div>
-
-            <div class="grid-kedua my-5">
-                <div class="grid grid-cols-4 grid-rows-3 gap-3 text-center text-white font-bold">
-                    <div class="col-span-2 row-span-3 p-4 bg-amber-300 rounded-md">
-                        1
-                    </div>
-                    <div class="col-span- row-span-1 p-4 bg-yellow-200 rounded-md">
-                        2
-                    </div>
-                    <div class="col-span-1 row-span-1 p-4 bg-green-200 rounded-md">
-                        3
-                    </div>
-                    <div class="col-span-1 row-span-1 p-4 bg-red-200 rounded-md">
-                        4
-                    </div>
-                    <div class="col-span-1 row-span-1 p-4 bg-blue-200 rounded-md">
-                        5
-                    </div>
-
-                    <div class="col-span-2 row-span-1 p-4 bg-cyan-200 rounded-md">
-                        6
-                    </div>
-                </div>
-            </div>
-
-            <img src="assets/img/grid1.png" alt="grid1" class="my-3">
-            <img src="assets/img/grid2.png" alt="grid1" class="my-3">
-        </div>
-    </section>
-
-
-    <!-- card -->
-    <section class="cover">
-        <div class="card">
-            <p class="judul">Membuat Card</p>
-            <div class="grid grid-cols-3 grid-rows-4 gap-5 mb-5">
-                <!-- standart -->
-                <div
-                    class="col-span-3 row-span-4 lg:col-span-1 lg:row-span-3 md:col-span-3  bg-blue-100 py-6 px-4 rounded-lg hover:bg-blue-200 hover:shadow-sm">
-                    <p class="font-bold text-blue-600 text-2xl mb-6">Standard</p>
-                    <div class="body">
-                        <div class="flex">
-                            <ion-icon name="checkmark-circle-outline" class="text-blue-700 text-2xl"></ion-icon>
-                            <p class="font-bold text-blue-500 ml-3">Akses kelas 3 hari</p>
-                        </div>
-                        <div class="flex my-3">
-                            <ion-icon name="checkmark-circle-outline" class="text-blue-700 text-2xl"></ion-icon>
-                            <p class="font-bold text-blue-500 ml-3">Limit durasi menonton</p>
+                    <div class="desc mt-9 text-justify">
+                        <div class="cdn my-6">
+                            <p class="text-gray-600 text-lg font-bold mb-2">1. Melalui CDN</p>
+                            <p class="tracking-normal ml-5">Installasi tailwind bisa melalui CDN seperti yang bisa
+                                lakukan
+                                pada
+                                bootstrap. Caranya tinggal masuk ke website <a
+                                    href="https://tailwindcss.com/docs/installation/play-cdn"
+                                    class="text-blue-800 font-bold hover:text-blue-600" target="blank">Tailwind dengan
+                                    CDN</a>
+                                lalu copy bagian script nya dan paste ke head html kita. <span
+                                    class="font-bold text-yellow-400 leading-7">SELAMAT TAILWIND BERHASIL ANDA
+                                    INSTALL.</span>
+                            </p>
+                            <img src="assets/img/install via cdn.png" alt="via cnd" class="mt-4">
                         </div>
 
-                        <div class="harga my-7">
-                            <p class="font-bold text-white text-4xl">Rp 10.000</p>
-                        </div>
+                        <div class="cli my-6">
+                            <p class="text-gray-600 text-lg font-bold mb-2">2. Melalui CLI</p>
+                            <p class="tracking-normal ml-5 mb-4">Installasi ini sangat disarankan ketika website anda
+                                sudah
+                                masuk ke tahap production dan siap direlease. Sehingga website anda tidak perlu
+                                melakukan
+                                request ke server tailwind. Tahapan menginstall tailwind menggunakan CLI sangat mudah,
+                                berikut
+                                tahapan yang bisa anda ikuti :</p>
 
+                            <!-- install node js -->
+                            <p class="judul ml-5 text-gray-600 font-bold mb-1">1. Install Node JS</p>
+                            <p class="desc ml-9">Silahkan anda install node js terlebih dahulu. Karena nanti akan
+                                dibutuhkan
+                                ketika kita menginstall tailwind. <a href="https://nodejs.org/en/"
+                                    class="text-blue-700 font-bold hover:text-blue-500" target="blank">Download
+                                    disini</a>.
+                                Selanjutnya tinggal lakukan installasi seperti biasa. Untuk mengecek apakah sudah
+                                terinstall
+                                atau belum, anda bisa masuk ke CMD lalu ketikan perintah <span
+                                    class="text-blue-900">node
+                                    -v</span> dan cek juga npm nya dengan cara <span class="text-blue-900">npm
+                                    -v.</span>
+                                Jika
+                                tidak muncul seperti gambar di bawah anda bisa pergi ke <a
+                                    href="https://www.journaldev.com/7402/node-js-environment-setup-node-js-installation"
+                                    class="font-bold text-blue-700 hover:text-blue-500" target="blank">sini</a>
+                                <img src="assets/img/ceknodenpm.png" alt="node" class="mt-4">
+                            </p>
+
+                            <!-- eksekusi installasi menggunakan cli  -->
+                            <p class="judul ml-5 text-gray-600 font-bold mt-7 mb-1">2. Install Tailwind dengan CLI</p>
+                            <p class="desc ml-9">Jika node dan npm sudah terpasang, sekarang silahkan pergi ke <a
+                                    href="https://tailwindcss.com/docs/installation"
+                                    class="text-blue-700 hover:text-blue-500 font-bold">sini.</a> Lalu anda ketikan
+                                perintah
+                                <span class="text-blue-900">npm init.</span> Jika sudah lalu lanjut ketikan perintah
+                                <span class="text-blue-900">npm install -D tailwindcss.</span> Jika sudah anda ketikan
+                                pertinah
+                                <span class="text-blue-900">npx tailwindcss init.</span> Jika semua berhasil maka di
+                                file
+                                explorer anda akan muncul folder dan file tambahan seperti ini. Selamat tailwind
+                                berhasil
+                                anda
+                                install namun belum bisa digunakan.
+                                <img src="assets/img/berhasilinstalltailwondcli.png" alt="success" class="mt-4">
+                            </p>
+
+
+                            <!-- setup tailwind -->
+                            <p class="judul ml-5 text-gray-600 font-bold mt-7 mb-1">3. Setup Tailwind</p>
+                            <p class="desc ml-9 mb-1">Agar anda bisa menggunakan tailwind ada beberapa konfigurasi yang
+                                harus
+                                anda lakukan. Pertama anda buat folder baru berupa src/css. Lalu buat file baru di
+                                folder
+                                tersebut dan masukan script berikut <span
+                                    class="text-blue font-bold text-blue-800">@tailwind
+                                    base;
+                                    @tailwind components;
+                                    @tailwind utilities</span>. Setalah itu buat folder assets/css Sehingga susunan
+                                folder
+                                akan
+                                berubah seperti ini
+                                <img src="assets/img/cssinput.png" alt="css input" class="mt-4">
+                            </p>
+
+                            <p class="ml-14 text-gray-500 font-bold mb-1 mt-4">1. File package.json</p>
+                            <p class="ml-16">Silahkan buka file package.json dan ubah di bagian script seperti berikut.
+                                Lalu
+                                jalankan perintah <span class="font-bold text-blue-800">npm run dev.</span> Dan akan
+                                terbentuk
+                                file baru di folder asset/css berupa style.css.
+
+                                <img src="assets/img/package.png" alt="package" class="mt-3">
+                                <img src="assets//img/outputcss.png" alt="output" class="mt-2">
+                            </p>
+
+                            <p class="ml-14 text-gray-500 font-bold mb-1 mt-5">2. File tailwind.config.js</p>
+                            <p class="ml-16">Silahkan buka file tailwind.config.js lalu lakukan perubahan seperti pada
+                                gambar
+                                beirkut
+                                <img src="assets/img/configtailwind.png" alt="config" class="mt-3">
+                            </p>
+
+                            <p class="ml-14 text-gray-500 font-bold mb-1 mt-5">3. Installasi berhasil</p>
+                            <p class="ml-16">Selamat tailwind berhasil anda install sekarang anda bisa menggunakan
+                                utilities
+                                dari tailwind. Oh ya saat menjalankan perintah <span class="font-bold text-blue-800">npm
+                                    run
+                                    dev</span> ushakan terminal jangan di close supaya tailwind bisa melakukan perubahan
+                                secara
+                                realtime. Dan untuk file index.html bagian css externalnya anda arahkan ke
+                                assets/css/style.css.
+                                <img src="assets/img/installberhasil.png" alt="berhasil" class="mt-4">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- custom utility -->
+            <section class="cover" id="custom">
+                <div class="card">
+                    <p class="judul">Custom Utility</p>
+                    <p class="desc text-justify">Pada tailwind kita bisa memodifikasi atau melakukan gruping terhadap
+                        utility
+                        yang kita tulis. Saya akan melakukan grouping pada utlitiy ketika membuat cover. Dan lihat
+                        perbedaannya
+                        <img src="assets/img/custombefore.png" alt="before" class="mt-2">
+                        <img src="assets/img/customafter.png" alt="after" class="my-2 mb-5">
+                        Sangat terlihat jelas pada class section jadi lebih singkat penulisannya. Cara melakukan
+                        grouping
+                        sangat
+                        mudah anda hanya perlu ke file input.css dan lakukan perubahan seperti ini.
+                        <img src="assets/img/customproses.png" alt="proses" class="my-4">
+                    </p>
+                </div>
+            </section>
+
+            <!-- button -->
+            <section class="cover">
+                <div class="card">
+                    <p class="judul">Membuat Tombol</p>
+                    <div class="button flex justify-start items-center my-2 flex-wrap">
+                        <button
+                            class="bg-blue-400 text-white mb-3 mx-2 py-2 px-4 text-lg rounded-full  hover:bg-blue-700">Awesome!!</button>
 
                         <button
-                            class=" rounded-md bg-blue-400 hover:bg-blue-700 font-bold text-white px-9 py-3 block mx-auto">Beli
-                            Kelas</button>
-                    </div>
-                </div>
-
-                <!-- sultan -->
-                <div
-                    class="col-span-3 row-span-4 lg:col-span-1 md:col-span-3 bg-yellow-300 py-6 px-4 rounded-md hover:bg-yellow-400 hover:shadow-sm">
-                    <p class="font-bold text-white text-3xl mb-6">Sultan</p>
-                    <div class="flex text-white">
-                        <ion-icon name="checkmark-circle-outline" class=" text-2xl"></ion-icon>
-                        <p class="font-bold  ml-3">Akses kelas selamanya</p>
-                    </div>
-                    <div class="flex text-white my-3">
-                        <ion-icon name="checkmark-circle-outline" class=" text-2xl"></ion-icon>
-                        <p class="font-bold  ml-3">Durasi unlimited</p>
-                    </div>
-                    <div class="flex text-white mb-3">
-                        <ion-icon name="checkmark-circle-outline" class=" text-2xl"></ion-icon>
-                        <p class="font-bold  ml-3">Sertifikat</p>
-                    </div>
-
-                    <div class="flex text-white">
-                        <ion-icon name="checkmark-circle-outline" class=" text-2xl"></ion-icon>
-                        <p class="font-bold  ml-3">Diskusi dengan mentor</p>
-                    </div>
-
-                    <div class="harga my-12">
-                        <p class="font-bold text-white text-4xl">Rp 90.000</p>
-                    </div>
-
-
-                    <button
-                        class="relative rounded-md bg-yellow-500 hover:bg-yellow-600 font-bold text-white px-9 py-3 block mx-auto">
-                        <span class="absolute top-0 right-0 inline-flex rounded-full h-3 w-3 bg-white"></span>
-                        <span
-                            class="animate-ping absolute top-0 right-0 inline-flex h-3 w-3 rounded-full bg-yellow-700 opacity-75"></span>
-                        Beli Kelas
-                    </button>
-                </div>
-
-                <!-- Premium -->
-                <div
-                    class="col-span-3 row-span-4 lg:col-span-1 lg:row-span-3 md:col-span-3 bg-blue-100 py-6 px-4 rounded-lg hover:bg-blue-200 hover:shadow-sm">
-                    <p class="font-bold text-blue-600 text-2xl mb-6">Premium</p>
-                    <div class="body">
-                        <div class="flex">
-                            <ion-icon name="checkmark-circle-outline" class="text-blue-700 text-2xl"></ion-icon>
-                            <p class="font-bold text-blue-500 ml-3">Akses kelas 10 hari</p>
-                        </div>
-                        <div class="flex my-3">
-                            <ion-icon name="checkmark-circle-outline" class="text-blue-700 text-2xl"></ion-icon>
-                            <p class="font-bold text-blue-500 ml-3">Limit durasi menonton</p>
-                        </div>
-
-
-                        <div class="harga my-7">
-                            <p class="font-bold text-white text-4xl">Rp 25.000</p>
-                        </div>
-
+                            class="bg-yellow-400 text-white mb-3 mx-2 py-2 px-4 text-lg rounded-2xl  hover:bg-yellow-600">Awesome!!</button>
 
                         <button
-                            class=" rounded-md bg-blue-400 hover:bg-blue-700 font-bold text-white px-9 py-3 block mx-auto">Beli
-                            Kelas</button>
-                    </div>
-                </div>
+                            class="bg-fuchsia-400 text-white mb-3 mx-2 py-2 px-4 text-lg rounded-md  hover:bg-fuchsia-600">Awesome!!</button>
 
-            </div>
-            <hr class="my-14">
-            <img src="assets/img/cardsrandart.png" alt="standart">
-            <img src="assets/img/cardsultan.png" alt="standart" class="my-8">
-            <img src="assets/img/cardpremium.png" alt="standart" class="my-8">
+                        <button
+                            class=" bg-pink-400 text-white mb-3 mx-2 py-2 px-4 text-lg rounded-md  hover:bg-pink-600">Awesome!!</button>
+                    </div>
+                    <img src="assets/img/tombol.png" alt="tombol" class="my-4">
+                </div>
+            </section>
+
+
+            <!-- grid -->
+            <section class="cover">
+                <div class="card">
+                    <p class="judul">Setup Grid</p>
+                    <div class="gird-pertama">
+                        <div class="grid grid-cols-4 grid-rows-4 gap-3 text-center text-white font-bold">
+                            <div class="col-span-2 row-span-4 bg-blue-300 text-center p-4 rounded-lg">
+                                1
+                            </div>
+                            <div class="col-span-1 row-span-2 bg-red-200 text-center p-4 rounded-lg">
+                                2
+                            </div>
+                            <div class="col-span-1 row-span-1 bg-yellow-200 text-center p-4 rounded-lg">
+                                3
+                            </div>
+                            <div class="col-span-1 row-span-1 bg-green-200 text-center p-4 rounded-lg">
+                                4
+                            </div>
+                            <div class="col-span-1 row-span-2 bg-violet-400 text-center p-4 rounded-lg">
+                                5
+                            </div>
+                            <div class="col-span-1 row-span-2 bg-fuchsia-400 text-center p-4 rounded-lg">
+                                6
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="grid-kedua my-5">
+                        <div class="grid grid-cols-4 grid-rows-3 gap-3 text-center text-white font-bold">
+                            <div class="col-span-2 row-span-3 p-4 bg-amber-300 rounded-md">
+                                1
+                            </div>
+                            <div class="col-span- row-span-1 p-4 bg-yellow-200 rounded-md">
+                                2
+                            </div>
+                            <div class="col-span-1 row-span-1 p-4 bg-green-200 rounded-md">
+                                3
+                            </div>
+                            <div class="col-span-1 row-span-1 p-4 bg-red-200 rounded-md">
+                                4
+                            </div>
+                            <div class="col-span-1 row-span-1 p-4 bg-blue-200 rounded-md">
+                                5
+                            </div>
+
+                            <div class="col-span-2 row-span-1 p-4 bg-cyan-200 rounded-md">
+                                6
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="assets/img/grid1.png" alt="grid1" class="my-3">
+                    <img src="assets/img/grid2.png" alt="grid1" class="my-3">
+                </div>
+            </section>
+
+
+            <!-- card -->
+            <section class="cover">
+                <div class="card">
+                    <p class="judul">Membuat Card</p>
+                    <div class="grid grid-cols-3 grid-rows-4 gap-5 mb-5">
+                        <!-- standart -->
+                        <div
+                            class="col-span-3 row-span-4 lg:col-span-1 lg:row-span-3 md:col-span-3  bg-blue-100 py-6 px-4 rounded-lg hover:bg-blue-200 hover:shadow-sm">
+                            <p class="font-bold text-blue-600 text-2xl mb-6">Standard</p>
+                            <div class="body">
+                                <div class="flex">
+                                    <ion-icon name="checkmark-circle-outline" class="text-blue-700 text-2xl"></ion-icon>
+                                    <p class="font-bold text-blue-500 ml-3">Akses kelas 3 hari</p>
+                                </div>
+                                <div class="flex my-3">
+                                    <ion-icon name="checkmark-circle-outline" class="text-blue-700 text-2xl"></ion-icon>
+                                    <p class="font-bold text-blue-500 ml-3">Limit durasi menonton</p>
+                                </div>
+
+                                <div class="harga my-7">
+                                    <p class="font-bold text-white text-4xl">Rp 10.000</p>
+                                </div>
+
+
+                                <button
+                                    class=" rounded-md bg-blue-400 hover:bg-blue-700 font-bold text-white px-9 py-3 block mx-auto">Beli
+                                    Kelas</button>
+                            </div>
+                        </div>
+
+                        <!-- sultan -->
+                        <div
+                            class="col-span-3 row-span-4 lg:col-span-1 md:col-span-3 bg-yellow-300 py-6 px-4 rounded-md hover:bg-yellow-400 hover:shadow-sm">
+                            <p class="font-bold text-white text-3xl mb-6">Sultan</p>
+                            <div class="flex text-white">
+                                <ion-icon name="checkmark-circle-outline" class=" text-2xl"></ion-icon>
+                                <p class="font-bold  ml-3">Akses kelas selamanya</p>
+                            </div>
+                            <div class="flex text-white my-3">
+                                <ion-icon name="checkmark-circle-outline" class=" text-2xl"></ion-icon>
+                                <p class="font-bold  ml-3">Durasi unlimited</p>
+                            </div>
+                            <div class="flex text-white mb-3">
+                                <ion-icon name="checkmark-circle-outline" class=" text-2xl"></ion-icon>
+                                <p class="font-bold  ml-3">Sertifikat</p>
+                            </div>
+
+                            <div class="flex text-white">
+                                <ion-icon name="checkmark-circle-outline" class=" text-2xl"></ion-icon>
+                                <p class="font-bold  ml-3">Diskusi dengan mentor</p>
+                            </div>
+
+                            <div class="harga my-12">
+                                <p class="font-bold text-white text-4xl">Rp 90.000</p>
+                            </div>
+
+
+                            <button
+                                class="relative rounded-md bg-yellow-500 hover:bg-yellow-600 font-bold text-white px-9 py-3 block mx-auto">
+                                <span class="absolute top-0 right-0 inline-flex rounded-full h-3 w-3 bg-white"></span>
+                                <span
+                                    class="animate-ping absolute top-0 right-0 inline-flex h-3 w-3 rounded-full bg-yellow-700 opacity-75"></span>
+                                Beli Kelas
+                            </button>
+                        </div>
+
+                        <!-- Premium -->
+                        <div
+                            class="col-span-3 row-span-4 lg:col-span-1 lg:row-span-3 md:col-span-3 bg-blue-100 py-6 px-4 rounded-lg hover:bg-blue-200 hover:shadow-sm">
+                            <p class="font-bold text-blue-600 text-2xl mb-6">Premium</p>
+                            <div class="body">
+                                <div class="flex">
+                                    <ion-icon name="checkmark-circle-outline" class="text-blue-700 text-2xl"></ion-icon>
+                                    <p class="font-bold text-blue-500 ml-3">Akses kelas 10 hari</p>
+                                </div>
+                                <div class="flex my-3">
+                                    <ion-icon name="checkmark-circle-outline" class="text-blue-700 text-2xl"></ion-icon>
+                                    <p class="font-bold text-blue-500 ml-3">Limit durasi menonton</p>
+                                </div>
+
+
+                                <div class="harga my-7">
+                                    <p class="font-bold text-white text-4xl">Rp 25.000</p>
+                                </div>
+
+
+                                <button
+                                    class=" rounded-md bg-blue-400 hover:bg-blue-700 font-bold text-white px-9 py-3 block mx-auto">Beli
+                                    Kelas</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr class="my-14">
+                    <img src="assets/img/cardsrandart.png" alt="standart">
+                    <img src="assets/img/cardsultan.png" alt="standart" class="my-8">
+                    <img src="assets/img/cardpremium.png" alt="standart" class="my-8">
+                </div>
+            </section>
+
+
+            <!-- navbar -->
+            <section class="cover" id="nav-create">
+                <div class="card">
+                    <p class="judul">Membuat Navbar</p>
+                    <div class="flex justify-between items-center bg-blue-200 p-3 rounded-md relative z-[9] mb-4">
+                        <div class="logo" style="height: 45px;">
+                            <img src="assets/img/logo.png" cls alt="logo" class="h-full">
+                        </div>
+
+                        <div class="nav">
+                            <div class="toggle md:hidden lg:hidden" style="height:40px">
+                                <button>
+                                    <ion-icon name="menu-outline" class="text-blue-500 text-4xl"></ion-icon>
+                                </button>
+                            </div>
+
+                            <ul class=" hidden md:hidden lg:flex text-blue-600 sidebar ">
+                                <li>
+                                    <a href="#nav-create" class="px-4 nav-decoration font-normal">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#nav-create" class="px-4 nav-decoration font-normal">Feature</a>
+                                </li>
+                                <li>
+                                    <a href="#nav-create" class="px-4 nav-decoration font-normal">Testimonial</a>
+                                </li>
+                                <li>
+                                    <a href="#nav-create" class="px-4 nav-decoration font-normal">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#nav-create" class="px-4 nav-decoration font-normal">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                    <img src="assets/img/navbar1.png" alt="navbar1" class="my-4">
+                    <img src="assets/img/navbar2.png" alt="navbar2" class="my-4">
+                </div>
+            </section>
+
+
+            <section class="cover">
+                <div class="card">
+                    <p class="judul">Membuat Hero</p>
+                    <div class="hero my-12">
+                        <div class="flex items-center flex-wrap justify-between">
+                            <div class="w-full md:w-1/2 lg:w-1/2 ">
+                                <p class="text-4xl text-gray-800 font-bold">Expedisi Kurir JNT Indonesia</p>
+                                <p class="my-5 text-gray-500 font-medium">Melayani jasa pengiriman keseluruh pelosok
+                                    Indonesia dengan biaya ongkos kirim termurah se galaxy bimasakti. Ayo berlangganan
+                                    sekarang</p>
+                                <button
+                                    class="font-bold bg-[#ff0014] text-white text-md p-3 hover:shadow-xl hover:bg-red-600 hover:translate-y-1 hover:transition">Berlangganan</button>
+                            </div>
+
+                            <div class=" w-full my-5 md:my-0 lg:my-0 md:w-1/3 lg:w-1/3">
+                                <img src="assets/img/jnt.jpg" alt="jnt" class="h-full w-full">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-11">
+                    <img src="assets/img/hero.png" alt="hero">
+                </div>
+            </section>
         </div>
-    </section>
 
-
-    <!-- navbar -->
-    <section class="cover" id="nav-create">
-        <div class="card">
-            <p class="judul">Membuat Navbar</p>
-            <div class="flex justify-between items-center bg-blue-200 p-3 rounded-md relative z-[9] mb-4">
-                <div class="logo" style="height: 45px;">
-                    <img src="assets/img/logo.png" cls
-                    alt="logo" class="h-full">
-                </div>
-
-                <div class="nav">
-                    <div class="toggle md:hidden lg:hidden" style="height:40px">
-                        <button>
-                            <ion-icon name="menu-outline" class="text-blue-500 text-4xl"></ion-icon>
-                        </button>
-                    </div>
-
-                    <ul class=" hidden md:hidden lg:flex text-blue-600 sidebar ">
-                        <li>
-                            <a href="#nav-create" class="px-4 nav-decoration font-normal">Home</a>
-                        </li>
-                        <li>
-                            <a href="#nav-create" class="px-4 nav-decoration font-normal">Feature</a>
-                        </li>
-                        <li>
-                            <a href="#nav-create" class="px-4 nav-decoration font-normal">Testimonial</a>
-                        </li>
-                        <li>
-                            <a href="#nav-create" class="px-4 nav-decoration font-normal">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#nav-create" class="px-4 nav-decoration font-normal">Contact</a>
-                        </li>
-                    </ul>
+        <div class="kanan hidden lg:block">
+            <div class="isi fixed top-30 right-10 lg:w-[230px] sm:w-0">
+                <div class="bungkus bg-white p-5 rounded-xl shadow-sm hover:shadow-lg">
+                    <p class="font-inter  text-gray-700 font-bold text-md mb-4">On This Page</p>
+                    <a href="#definisi">
+                        <div class="flex items-center hover:text-blue-700">
+                            <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
+                            <div class="ml-3">Definisi Tailwind</div>
+                        </div>
+                    </a>
+                    <hr class="my-3">
+                    <a href="#install">
+                        <div class="flex items-center hover:text-blue-700">
+                            <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
+                            <div class="ml-3">Installasi Tailwind</div>
+                        </div>
+                    </a>
                 </div>
             </div>
-            <hr class="my-4">
-            <img src="assets/img/navbar1.png" alt="navbar1" class="my-4">
-            <img src="assets/img/navbar2.png" alt="navbar2" class="my-4">
         </div>
-    </section>
-
-
-    <section class="cover">
-        <div class="card">
-            <p class="judul">Membuat Hero</p>
-            <div class="hero my-12">
-                <div class="flex items-center flex-wrap justify-between">
-                    <div class="w-full md:w-1/2 lg:w-1/2 ">
-                        <p class="text-4xl text-gray-800 font-bold">Expedisi Kurir JNT Indonesia</p>
-                        <p class="my-5 text-gray-500 font-medium">Melayani jasa pengiriman keseluruh pelosok Indonesia dengan biaya ongkos kirim termurah se galaxy bimasakti. Ayo berlangganan sekarang</p>
-                        <button class="font-bold bg-[#ff0014] text-white text-md p-3 hover:shadow-xl hover:bg-red-600 hover:translate-y-1 hover:transition">Berlangganan</button>
-                    </div>
-
-                    <div class=" w-full my-5 md:my-0 lg:my-0 md:w-1/3 lg:w-1/3">
-                        <img src="assets/img/jnt.jpg" alt="jnt" class="h-full w-full">
-                    </div>
-                </div>
-            </div>
-            <hr class="my-11">
-            <img src="assets/img/hero.png" alt="hero">
-        </div>
-    </section>
-
+    </main>
 
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -445,8 +522,8 @@
         let toggle = document.querySelector('.toggle')
         let sidebar = document.querySelector('.sidebar')
 
-        toggle.addEventListener('click', function(){
-            
+        toggle.addEventListener('click', function () {
+
             sidebar.classList.toggle('hidden')
             sidebar.classList.toggle('kecil')
         })
