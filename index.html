@@ -78,6 +78,46 @@
 
     <!-- MAIN KONTEN -->
 
+
+    <div class="kiri hidden lg:block">
+        <div class="isi absolute top-30 left-10 lg:w-[230px] sm:w-0">
+            <div class="profile-tailwind bg-white p-3 rounded-md hover:shadow-md shadow-sm">
+                <div class="logo" style="height: 100px;">
+                    <img src="assets/img/logo.png" alt="logo" class="h-full block mx-auto">
+                </div>
+                <p class="text-center my-4 font-bold text-lg text-gray-700">TailwindCSS</p>
+                <div class="icon mt-8">
+                    <!-- github -->
+                    <a href="https://github.com/tailwindlabs/tailwindcss" target="blank">
+                        <div
+                            class="github flex items-center bg-white  py-1 px-5 rounded-xl  hover:bg-blue-700 group my-3">
+                            <div class="gambar">
+                                <ion-icon name="logo-github" class="text-3xl group-hover:text-white"></ion-icon>
+                            </div>
+                            <div class="text ml-2 group-hover:text-white text-gray-700">
+                                <p class="font-semibold">Kunjungi Github</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- website -->
+                    <a href="https://tailwindcss.com/" target="blank">
+                        <div
+                            class="github flex items-center bg-white  py-1 px-5 rounded-xl  hover:bg-blue-800 group my-3">
+                            <div>
+                                <ion-icon name="globe-outline" class="text-3xl group-hover:text-white"></ion-icon>
+                            </div>
+                            <div class="text ml-2 group-hover:text-white text-gray-700">
+                                <p class="font-semibold">Kunjungi Website</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <main class="sm:block lg:flex justify-center items-start">
         <div class="konten-inti lg:px-14 sm:px-0">
             <!-- tailwind ? -->
@@ -491,65 +531,75 @@
         </div>
 
         <div class="kanan hidden lg:block">
-            <div class="isi fixed top-30 right-10 lg:w-[230px] sm:w-0">
-                <div class="bungkus bg-white p-5 rounded-xl shadow-sm hover:shadow-lg">
+            <div class="isi fixed top-30 right-10 lg:w-[230px] lg:h-4 sm:w-0  ">
+                <div class="bungkus bg-white p-5 rounded-xl shadow-sm hover:shadow-lg  overflow-y-scroll h-[520px]">
                     <p class="font-inter  text-gray-700 font-bold text-lg mb-4">Pintasan</p>
-                    <a href="#definisi">
-                        <div class="flex items-center hover:bg-blue-700  hover:p-2 hover:text-white hover:rounded-md">
-                            <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
-                            <div class="ml-3">Definisi Tailwind</div>
-                        </div>
-                    </a>
-                    <hr class="my-3">
-                    <a href="#install">
-                        <div class="flex items-center hover:bg-blue-700  hover:p-2 hover:text-white hover:rounded-md">
-                            <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
-                            <div class="ml-3">Installasi Tailwind</div>
-                        </div>
-                    </a>
-                    <hr class="my-3">
-                    <a href="#custom-unity">
-                        <div class="flex items-center hover:bg-blue-700  hover:p-2 hover:text-white hover:rounded-md">
-                            <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
-                            <div class="ml-3">Custom Unity</div>
-                        </div>
-                    </a>
-                    <hr class="my-3">
-                    <a href="#tombol">
-                        <div class="flex items-center hover:bg-blue-700  hover:p-2 hover:text-white hover:rounded-md">
-                            <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
-                            <div class="ml-3">Awesome Button</div>
-                        </div>
-                    </a>
-                    <hr class="my-3">
-                    <a href="#grid">
-                        <div class="flex items-center hover:bg-blue-700  hover:p-2 hover:text-white hover:rounded-md">
-                            <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
-                            <div class="ml-3">Setup Grid</div>
-                        </div>
-                    </a>
-                    <hr class="my-3">
-                    <a href="#card">
-                        <div class="flex items-center hover:bg-blue-700  hover:p-2 hover:text-white hover:rounded-md">
-                            <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
-                            <div class="ml-3">Card</div>
-                        </div>
-                    </a>
-                    <hr class="my-3">
-                    <a href="#navbar">
-                        <div class="flex items-center hover:bg-blue-700  hover:p-2 hover:text-white hover:rounded-md">
-                            <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
-                            <div class="ml-3">Navbar</div>
-                        </div>
-                    </a>
-                    <hr class="my-3">
-                    <a href="#hero">
-                        <div class="flex items-center hover:bg-blue-700  hover:p-2 hover:text-white hover:rounded-md">
-                            <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
-                            <div class="ml-3">Hero Section</div>
-                        </div>
-                    </a>
-                    <hr class="my-3">
+                    
+                        <a href="#definisi">
+                            <div
+                                class="flex items-center hover:bg-blue-700  py-2 px-3 hover:text-white hover:rounded-md group">
+                                <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
+                                <div class="ml-3">Definisi Tailwind</div>
+                            </div>
+                        </a>
+                        <hr class="my-1">
+                        <a href="#install">
+                            <div
+                                class="flex items-center hover:bg-blue-700  py-2 px-3 hover:text-white hover:rounded-md group">
+                                <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
+                                <div class="ml-3">Installasi Tailwind</div>
+                            </div>
+                        </a>
+                        <hr class="my-1">
+                        <a href="#custom-unity">
+                            <div
+                                class="flex items-center hover:bg-blue-700  py-2 px-3 hover:text-white hover:rounded-md group">
+                                <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
+                                <div class="ml-3">Custom Unity</div>
+                            </div>
+                        </a>
+                        <hr class="my-1">
+                        <a href="#tombol">
+                            <div
+                                class="flex items-center hover:bg-blue-700  py-2 px-3 hover:text-white hover:rounded-md group">
+                                <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
+                                <div class="ml-3">Awesome Button</div>
+                            </div>
+                        </a>
+                        <hr class="my-1">
+                        <a href="#grid">
+                            <div
+                                class="flex items-center hover:bg-blue-700  py-2 px-3 hover:text-white hover:rounded-md group">
+                                <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
+                                <div class="ml-3">Setup Grid</div>
+                            </div>
+                        </a>
+                        <hr class="my-1">
+                        <a href="#card">
+                            <div
+                                class="flex items-center hover:bg-blue-700  py-2 px-3 hover:text-white hover:rounded-md group">
+                                <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
+                                <div class="ml-3">Card</div>
+                            </div>
+                        </a>
+                        <hr class="my-1">
+                        <a href="#navbar">
+                            <div
+                                class="flex items-center hover:bg-blue-700  py-2 px-3 hover:text-white hover:rounded-md group">
+                                <ion-icon name="checkmark-circle-outline" class=" text-md"></ion-icon>
+                                <div class="ml-3">Navbar</div>
+                            </div>
+                        </a>
+                        <hr class="my-1">
+                        <a href="#hero">
+                            <div
+                                class="flex items-center hover:bg-blue-700 py-2 px-3 hover:text-white hover:rounded-md group">
+                                <ion-icon name="checkmark-circle-outline" class="text-md"></ion-icon>
+                                <div class="ml-3">Hero Section</div>
+                            </div>
+                        </a>
+                        <hr class="my-1">
+                    
                 </div>
             </div>
         </div>

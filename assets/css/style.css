@@ -570,6 +570,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 2.5rem;
 }
 
+.left-10 {
+  left: 2.5rem;
+}
+
+.left-40 {
+  left: 10rem;
+}
+
+.left-20 {
+  left: 5rem;
+}
+
 .z-\[99\] {
   z-index: 99;
 }
@@ -688,6 +700,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 4rem;
 }
 
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .mb-28 {
   margin-bottom: 7rem;
 }
@@ -760,8 +777,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.75rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -786,6 +819,42 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full {
   height: 100%;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[12\] {
+  height: 12;
+}
+
+.h-\[120px\] {
+  height: 120px;
+}
+
+.h-\[620px\] {
+  height: 620px;
+}
+
+.h-\[220px\] {
+  height: 220px;
+}
+
+.h-\[320px\] {
+  height: 320px;
+}
+
+.h-\[520px\] {
+  height: 520px;
 }
 
 .w-10 {
@@ -828,6 +897,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 230px;
 }
 
+.w-2 {
+  width: 0.5rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.w-0 {
+  width: 0px;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-56 {
+  width: 14rem;
+}
+
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -867,6 +956,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -897,6 +990,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-5 {
   gap: 1.25rem;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
 }
 
 .scroll-smooth {
@@ -1056,6 +1165,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 1.25rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -1111,6 +1228,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 3.5rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1142,6 +1269,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold {
@@ -1230,6 +1362,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1337,6 +1475,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-blue-800:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 64 175 / var(--tw-bg-opacity));
+}
+
 .hover\:hover\:from-pink-500\/10:hover:hover {
   --tw-gradient-from: rgb(236 72 153 / 0.1);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(236 72 153 / 0));
@@ -1396,6 +1539,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.hover\:shadow-md:hover {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .hover\:transition:hover {
   transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1416,6 +1565,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hover\:delay-300:hover {
   transition-delay: 300ms;
+}
+
+.group:hover .group-hover\:font-bold {
+  font-weight: 700;
+}
+
+.group:hover .group-hover\:font-black {
+  font-weight: 900;
+}
+
+.group:hover .group-hover\:font-extrabold {
+  font-weight: 800;
+}
+
+.group:hover .group-hover\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1495,6 +1661,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
+  .lg\:h-\[\] {
+    height: ;
+  }
+
+  .lg\:h-\[400\] {
+    height: 400;
+  }
+
+  .lg\:h-\[420px\] {
+    height: 420px;
+  }
+
+  .lg\:h-\[42px\] {
+    height: 42px;
+  }
+
+  .lg\:h-4 {
+    height: 1rem;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -1505,6 +1691,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:w-\[230px\] {
     width: 230px;
+  }
+
+  .lg\:w-\[830px\] {
+    width: 830px;
   }
 
   .lg\:px-64 {
@@ -1530,5 +1720,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .lg\:sm\:w-0 {
+      width: 0px;
+    }
   }
 }
