@@ -1,7 +1,7 @@
 ### Learn-Tailwind
-Belajat framework css Tailwind
+Belajar framework css Tailwind
 
-### Demo : https://rezairfanwijaya.github.io/Learn-Tailwind/
+## Demo : https://rezairfanwijaya.github.io/Learn-Tailwind/
 
 
 
